@@ -1,0 +1,515 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #4F6F52;
+    --main-color: #03AED2;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #edecea;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navbar {
+    position: absolute;
+    top: 50%;
+    right: 20%; 
+    transform: translateY(-50%);
+    display: flex;
+    background: #edecea;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; 
+}
+
+
+.navbar li a.active {
+    color: var(--main-color);
+}
+
+
+.menu-icon.active .bx {
+    display: none; 
+}
+
+.menu-icon.active:before {
+    content: '\00d7'; 
+    font-family: 'boxicons';
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: initial; 
+    }
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    max-width:100%;
+    height:auto;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 2.7rem;
+}
+
+.home-text p {
+    font-size: 0.938rem;
+    margin: 0.4rem 0 1.8rem;
+}
+
+.home-text span {
+    color: var(--main-color);
+}
+
+.btn {
+    padding: 10px 14px;
+    background: var(--main-color);
+    color: #ffff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #68D2E8;
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width:881px) {
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+
+.menu-icon {
+    display: none; 
+}
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+        position: absolute; 
+        bottom: 50%;
+        right: 20%;
+        background: #edecea;
+        transition: 0.2s ease;
+        text-align: center;
+        z-index: 1000; 
+    }
+
+    .navbar.active {
+        display: block;
+    }
+}
+
+.menu-icon {
+    position: absolute;
+    top: 18px; 
+    right: 0%; 
+    z-index: 1001; 
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 11px 4%;
+    }
+
+    .menu-icon {
+        display: initial; 
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        z-index: 1001; 
+    }
+    #menu-icon {
+        display: initial;
+    }
+    @media (max-width: 768px) {
+        .navbar {
+            display: none;
+            position: absolute;
+            top: 100%; 
+            left: 0; 
+            right: 0; 
+            width: 100%;
+            background-color: #fff; 
+            transition: 0.2s ease;
+            text-align: center;
+            z-index: 1002; 
+        }
+    
+        .navbar.active {
+            display: block;
+        }
+    
+        .navbar a {
+            position: relative;
+            padding: 0.6rem;
+            display: block;
+            color: var(--text-color);
+            background-color: #f7f7f7; 
+        }
+    
+        .navbar a:hover {
+            color: var(--main-color);
+            background-color: #e0e0e0; 
+        }
+    
+        .navbar-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1001; 
+        }
+    
+        .navbar.active ~ .navbar-overlay {
+            display: block; 
+        }
+    }
+    
+    
+}
+
+@media (max-width: 491px) {
+    .home-text h1 {
+        font-size: 1.7rem;
+    }
+}
+
+
+footer {
+    background-color: #edecea;
+    color: #03AED2 ;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    max-width:100%;
+    height:auto;
+    padding: 10px 10%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    margin-top: 10px;
+}
+
+.contact-form label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #68D2E8;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form select option {
+    font-size: 1rem;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    max-width:100%;
+    height:auto;
+    padding: 12px;
+    /* border: 1px solid black; */
+}
+
+.text-end {
+    text-align: end;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.item-desc > a {
+    text-align: start;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: -1;
+}
+
+.item-desc > a:hover {
+   text-decoration: underline;
+}
+
+.item-desc > span {
+    text-align: start;
+    color: #666;
+    font-size: 10px;
+}
+
+.card {
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+.card-body {
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.card-image > img {
+    border-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 15px;
+}
+
+.card-text a {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: black;
+}
+
+.card-text a:hover {
+    color: #03AED2;
+}
+
+.card-text p {
+    font-size: 13px;
+    /* color: #666; */
+    margin-bottom: 10px;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.team {
+    margin-top: 25px;
+}
+
+.logo-kampus {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: white;
+    position: absolute;
+    z-index: 100 !important;
+}
+
+.logo-kampus img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+    padding: 3px;
+}
+
+.development-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    /* margin: 15px; */
+    background-color: white;
+    position: absolute;
+    z-index: 100 !important;
+}
+
+
+
+
+.text-end {
+    text-align: end;
+}
+
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: #e91e63;
+    position: absolute;
+    z-index: 100 !important;
+    margin: -30px 20px;
+    padding: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text > span {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}

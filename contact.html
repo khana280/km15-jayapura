@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperStore - Contact Us</title>
+    <link rel="icon" href="img/revou.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">Super<span>Store</span></a>
+            <div class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact" id="contact">
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-card">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <label for="address">Address:</label>
+                        <input type="address" id="address" name="address" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 SuperStore. All Rights Reserved.</p>
+    </footer>
+
+    <a href="#header" class="scroll-to-top"><i class="bx bx-chevron-up"></i></a>
+
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const nav = document.querySelector('nav');
+
+            menuIcon.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+
+            // Fungsi untuk menampilkan tombol scroll-to-top
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.querySelector('.scroll-to-top').style.display = 'block';
+                } else {
+                    document.querySelector('.scroll-to-top').style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperStore</title>
+    <link rel="icon" href="img/revou.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <style>
+        #footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #edecea;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">Super<span>Store</span></a>
+            <div class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></div>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html" class="active">Product</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product">
+        <div class="team-header">
+            <h1>List Products</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="text-end">
+                    <label for="filter" class="filter-label">Urutkan:</label>
+                     <select name="filter" id="filter">
+                        <option value="2">Harga Terendah</option>
+                        <option value="3">Harga Tertinggi</option>
+                        <option value="4">Terbaru</option>
+                        <option value="5">Terpopuler</option>
+                        </select>
+                    </div>
+                
+            </div>
+            <div class="product-list">
+                <div class="filter-product">
+                    <div class="dropdown">
+                       bingung mau diisi apa wkwk
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2022/8/19/5a269339-d626-40d1-8214-75dbfb9b606c.jpg" alt="product1">
+                    <div class="item-desc">
+                        <a href="#">Laptop Advan AI GEN Ryzen 7 8845HS 16 GB</a>
+                        <h4>Rp 10.000.000</h4>
+                        <span>Jakarta Pusat</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/1/20/f3da91bc-6094-44c0-a4f1-73c87f4fe41e.png" alt="product1">
+                    <div class="item-desc">
+                        <a href="#">Laptop Advan AI GEN Ryzen 7 8845HS 16 GB</a>
+                        <h4>Rp 10.000.000</h4>
+                        <span>Jakarta Pusat</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/5/18/78547d3b-27b6-4035-8e16-21ed53a61a8b.jpg" alt="product1">
+                    <div class="item-desc">
+                        <a href="#">Laptop Advan AI GEN Ryzen 7 8845HS 16 GB</a>
+                        <h4>Rp 10.000.000</h4>
+                        <span>Jakarta Pusat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
