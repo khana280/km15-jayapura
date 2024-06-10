@@ -1,0 +1,116 @@
+{
+  "data": [
+    {
+      "sub_category": "Paper",
+      "sales": 27208.733999999928,
+      "profit": 11471.904699999972,
+      "transaction": "662",
+      "__r_idx__": 0
+    },
+    {
+      "sub_category": "Accessories",
+      "sales": 26962.93399999999,
+      "profit": 5441.8036999999995,
+      "transaction": "312",
+      "__r_idx__": 1
+    },
+    {
+      "sub_category": "Furnishings",
+      "sales": 23973.34,
+      "profit": 5343.082399999998,
+      "transaction": "454",
+      "__r_idx__": 2
+    },
+    {
+      "sub_category": "Binders",
+      "sales": 22338.591000000004,
+      "profit": 4247.9085000000005,
+      "transaction": "681",
+      "__r_idx__": 3
+    },
+    {
+      "sub_category": "Art",
+      "sales": 13910.316,
+      "profit": 3384.167299999999,
+      "transaction": "421",
+      "__r_idx__": 4
+    },
+    {
+      "sub_category": "Phones",
+      "sales": 26853.587999999985,
+      "profit": 3069.3424999999997,
+      "transaction": "281",
+      "__r_idx__": 5
+    },
+    {
+      "sub_category": "Appliances",
+      "sales": 13445.330999999996,
+      "profit": 2955.1370000000006,
+      "transaction": "176",
+      "__r_idx__": 6
+    },
+    {
+      "sub_category": "Storage",
+      "sales": 23672.223999999984,
+      "profit": 2270.4112000000023,
+      "transaction": "305",
+      "__r_idx__": 7
+    },
+    {
+      "sub_category": "Labels",
+      "sales": 5036.848,
+      "profit": 2238.237099999999,
+      "transaction": "197",
+      "__r_idx__": 8
+    },
+    {
+      "sub_category": "Envelopes",
+      "sales": 4578.568000000001,
+      "profit": 1910.776100000001,
+      "transaction": "119",
+      "__r_idx__": 9
+    },
+    {
+      "sub_category": "Fasteners",
+      "sales": 1817.728,
+      "profit": 599.0222999999997,
+      "transaction": "123",
+      "__r_idx__": 10
+    },
+    {
+      "sub_category": "Supplies",
+      "sales": 3475.3900000000026,
+      "profit": 517.7307,
+      "transaction": "98",
+      "__r_idx__": 11
+    },
+    {
+      "sub_category": "Bookcases",
+      "sales": 5347.9516,
+      "profit": 239.3258,
+      "transaction": "35",
+      "__r_idx__": 12
+    },
+    {
+      "sub_category": "Chairs",
+      "sales": 16169.083999999995,
+      "profit": 156.95850000000002,
+      "transaction": "112",
+      "__r_idx__": 13
+    },
+    {
+      "sub_category": "Machines",
+      "sales": 712.603,
+      "profit": 57.3422,
+      "transaction": "9",
+      "__r_idx__": 14
+    },
+    {
+      "sub_category": "Tables",
+      "sales": 3371.4190000000003,
+      "profit": -256.8427,
+      "transaction": "26",
+      "__r_idx__": 15
+    }
+  ]
+}

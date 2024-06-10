@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "category": "Office Supplies",
+      "image": "https://images.pexels.com/photos/53874/pexels-photo-53874.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "sub_category": [
+        {
+          "name": "Appliances",
+          "image": "https://images.pexels.com/photos/213162/pexels-photo-213162.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Art",
+          "image": "https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Binders",
+          "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Envelopes",
+          "image": "https://images.pexels.com/photos/190295/pexels-photo-190295.jpeg?auto=compress&cs=tinysrgb&h=350"
+        }
+      ]
+    },
+    {
+      "category": "Furniture",
+      "image": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "sub_category": [
+        {
+          "name": "Bookcases",
+          "image": "https://images.pexels.com/photos/20496201/pexels-photo-20496201.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Chairs",
+          "image": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Furnishings",
+          "image": "https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Table",
+          "image": "https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&h=350"
+        }
+      ]
+    },
+    {
+      "category": "Technology",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "sub_category": [
+        {
+          "name": "Accessories",
+          "image": "https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Copiers",
+          "image": "https://images.pexels.com/photos/7964539/pexels-photo-7964539.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Machines",
+          "image": "https://images.pexels.com/photos/159298/gears-cogs-machine-machinery-159298.jpeg?auto=compress&cs=tinysrgb&h=350"
+        },
+        {
+          "name": "Phones",
+          "image": "https://images.pexels.com/photos/341523/pexels-photo-341523.jpeg?auto=compress&cs=tinysrgb&h=130"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+[
+    {
+      "total_sales_by_category": {
+        "Office Supplies": 115483.73,
+        "Technology": 54529.12,
+        "Furniture": 48861.79
+      },
+      "total_sales_by_state": {
+        "California": 76248.85999999994,
+        "New York": 40997.064,
+        "Texas": 25212.28859999999,
+        "Washington": 23832.794999999993,
+        "Ohio": 15221.149000000004,
+        "Illinois": 8215.770000000006,
+        "Pennsylvania": 8915.041999999993,
+        "Michigan": 6156.789,
+        "Georgia": 4101.97,
+        "Virginia": 3869.96
+      },
+      "average_discount_by_state_and_year": {
+        "Illinois": {
+          "2016": 39.20454545454545,
+          "2017": 35.37190082644631
+        },
+        "Texas": {
+          "2016": 34.30851063829794,
+          "2017": 35.91489361702133
+        },
+        "Colorado": {
+          "2016": 35.714285714285694,
+          "2017": 28.51063829787231
+        },
+        "Pennsylvania": {
+          "2016": 30.75268817204297,
+          "2017": 32.727272727272755
+        },
+        "Arizona": {
+          "2016": 31.176470588235272,
+          "2017": 30.6382978723404
+        }
+      },
+      "quarterly_sales_and_profit": {
+        "Q1 2016": {
+          "sales": 13469.339,
+          "profit": 2522.4227
+        },
+        "Q2 2016": {
+          "sales": 21491.079,
+          "profit": 4125.8319
+        },
+        "Q3 2016": {
+          "sales": 25284.484,
+          "profit": 5291.4694
+        },
+        "Q4 2016": {
+          "sales": 33687.811,
+          "profit": 6847.4049
+        },
+        "Q1 2017": {
+          "sales": 19578.8662,
+          "profit": 3906.8552
+        },
+        "Q2 2017": {
+          "sales": 24579.0234,
+          "profit": 4419.3583
+        },
+        "Q3 2017": {
+          "sales": 34327.028,
+          "profit": 7312.8594
+        },
+        "Q4 2017": {
+          "sales": 46457.019,
+          "profit": 9220.1055
+        }
+      },
+      "top_customers_by_state": {
+        "California": {
+          "customer_id": 390,
+          "sales": 49361.22999999994,
+          "profit": 12122.528699999988,
+          "transaction": 527
+        },
+        "New York": {
+          "customer_id": 232,
+          "sales": 26365.003999999957,
+          "profit": 7091.095299999999,
+          "transaction": 276
+        },
+        "Texas": {
+          "customer_id": 218,
+          "sales": 17762.98859999999,
+          "profit": 516.0331,
+          "transaction": 249
+        },
+        "Pennsylvania": {
+          "customer_id": 133,
+          "sales": 8578.237999999994,
+          "profit": 87.08470000000001,
+          "transaction": 143
+        },
+        "Washington": {
+          "customer_id": 131,
+          "sales": 14746.373999999993,
+          "profit": 3579.673700000001,
+          "transaction": 143
+        }
+      }
+    },
+    {
+      "state_data": {
+        "California": {
+          "sales": 49361.22999999994,
+          "profit": 12122.528699999988,
+          "transaction": 527
+        },
+        "New York": {
+          "sales": 26365.003999999957,
+          "profit": 7091.095299999999,
+          "transaction": 276
+        },
+        "Washington": {
+          "sales": 14746.373999999993,
+          "profit": 3579.673700000001,
+          "transaction": 143
+        },
+        "Michigan": {
+          "sales": 6156.789,
+          "profit": 2018.4144999999996,
+          "transaction": 50
+        },
+        "Georgia": {
+          "sales": 4101.97,
+          "profit": 1298.2885,
+          "transaction": 49
+        },
+        "Virginia": {
+          "sales": 3869.96,
+          "profit": 1210.5651,
+          "transaction": 47
+        },
+        "Indiana": {
+          "sales": 3453.3300000000004,
+          "profit": 1186.5833999999995,
+          "transaction": 35
+        },
+        "New Jersey": {
+          "sales": 3586.606,
+          "profit": 959.0454999999998,
+          "transaction": 40
+        },
+        "Kentucky": {
+          "sales": 3033.8000000000006,
+          "profit": 916.8991,
+          "transaction": 29
+        },
+        "Wisconsin": {
+          "sales": 2894.2299999999996,
+          "profit": 888.8532000000001,
+          "transaction": 30
+        },
+        "Massachusetts": {
+          "sales": 2352.9300000000007,
+          "profit": 791.6054999999999,
+          "transaction": 28
+        },
+        "Delaware": {
+          "sales": 2226.2500000000005,
+          "profit": 760.0191,
+          "transaction": 16
+        },
+        "Maryland": {
+          "sales": 2345.5600000000004,
+          "profit": 743.5373999999998,
+          "transaction": 23
+        },
+        "Arkansas": {
+          "sales": 1707.36,
+          "profit": 677.0879000000001,
+          "transaction": 15
+        },
+        "Ohio": {
+            "sales": 10460.629000000004,
+            "profit": 638.1141999999998,
+            "transaction": 131
+          },
+          "Missouri": {
+            "sales": 1837.71,
+            "profit": 533.3866999999999,
+            "transaction": 13
+          },
+          "Connecticut": {
+            "sales": 1979.397,
+            "profit": 521.4428,
+            "transaction": 28
+          },
+          "Minnesota": {
+            "sales": 1597.1200000000003,
+            "profit": 516.2602,
+            "transaction": 23
+          },
+          "Texas": {
+            "sales": 17762.98859999999,
+            "profit": 516.0331,
+            "transaction": 249
+          },
+          "Oklahoma": {
+            "sales": 1430.35,
+            "profit": 510.7162,
+            "transaction": 19
+          },
+          "Rhode Island": {
+            "sales": 1506.4000000000003,
+            "profit": 504.0798999999999,
+            "transaction": 16
+          },
+          "Alabama": {
+            "sales": 1332.38,
+            "profit": 466.5973000000001,
+            "transaction": 19
+          },
+          "Mississippi": {
+            "sales": 1368.16,
+            "profit": 446.0818999999999,
+            "transaction": 17
+          },
+          "Florida": {
+            "sales": 7300.900999999998,
+            "profit": 445.9769,
+            "transaction": 99
+          },
+          "Iowa": {
+            "sales": 992.38,
+            "profit": 393.87549999999993,
+            "transaction": 12
+          },
+          "New Mexico": {
+            "sales": 1046.438,
+            "profit": 323.7924,
+            "transaction": 12
+          },
+          "Tennessee": {
+            "sales": 4389.789000000001,
+            "profit": 306.30319999999995,
+            "transaction": 54
+          },
+          "Utah": {
+            "sales": 768.482,
+            "profit": 273.78540000000004,
+            "transaction": 9
+          },
+          "North Carolina": {
+            "sales": 6000.992000000001,
+            "profit": 267.0962,
+            "transaction": 71
+          },
+          "Nevada": {
+            "sales": 808.4459999999998,
+            "profit": 267.0395,
+            "transaction": 8
+          },
+          "Kansas": {
+            "sales": 783.9299999999998,
+            "profit": 263.3608,
+            "transaction": 8
+          },
+          "Nebraska": {
+            "sales": 778.67,
+            "profit": 256.7713,
+            "transaction": 12
+          },
+          "South Carolina": {
+            "sales": 804.6200000000001,
+            "profit": 235.5863,
+            "transaction": 9
+          },
+          "Arizona": {
+            "sales": 4138.939000000001,
+            "profit": 227.87010000000004,
+            "transaction": 46
+          },
+          "New Hampshire": {
+            "sales": 676.06,
+            "profit": 216.7139,
+            "transaction": 8
+          },
+          "Illinois": {
+            "sales": 8015.570000000005,
+            "profit": 191.5686,
+            "transaction": 134
+          },
+          "Idaho": {
+            "sales": 509.11800000000005,
+            "profit": 168.5182,
+            "transaction": 6
+          },
+          "Vermont": {
+            "sales": 407.29,
+            "profit": 157.6777,
+            "transaction": 3
+          },
+          "Louisiana": {
+            "sales": 501.95,
+            "profit": 149.9903,
+            "transaction": 8
+          },
+          "South Dakota": {
+            "sales": 347.12,
+            "profit": 101.0755,
+            "transaction": 3
+          },
+          "Colorado": {
+            "sales": 3866.0840000000007,
+            "profit": 92.55189999999997,
+            "transaction": 43
+          },
+          "Pennsylvania": {
+            "sales": 8578.237999999994,
+            "profit": 87.08470000000001,
+            "transaction": 143
+          },
+          "District of Columbia": {
+            "sales": 194.83,
+            "profit": 85.2758,
+            "transaction": 3
+          },
+          "North Dakota": {
+            "sales": 215.15,
+            "profit": 68.0549,
+            "transaction": 2
+          },
+          "Oregon": {
+            "sales": 1971.6949999999997,
+            "profit": 62.40909999999998,
+            "transaction": 24
+          },
+          "West Virginia": {
+            "sales": 88.64,
+            "profit": 43.4336,
+            "transaction": 1
+          },
+          "Maine": {
+            "sales": 109.48,
+            "profit": 33.9388,
+            "transaction": 1
+          },
+          "Montana": {
+            "sales": 103.31,
+            "profit": 29.6475,
+            "transaction": 2
+          }
+        }
+      }
+    ]    
+  

@@ -1,0 +1,147 @@
+{
+  "data": [
+    {
+      "name": "Alex Riyanto",
+      "university": "Universitas Janabadra",
+      "social_media": {
+        "instagram": "https://www.instagram.com/alex.ryt/",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/alex-riyanto/"
+      },
+      "image": "img/alex.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/male-icon.svg",
+      "gender": "male"
+    },
+    {
+      "name": "Hardi",
+      "university": "Universitas Palangka Raya",
+      "social_media": {
+        "instagram": "https://www.instagram.com/_hrdiiii?igsh=d3M2MjF6OGw2dnds",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/hardi-712507221/"
+      },
+      "image": "img/hardi.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/male-icon.svg",
+      "gender": "male"
+    },
+    {
+      "name": "Muhammad Iqbal",
+      "university": "Universitas Gajah Mada",
+      "social_media": {
+        "instagram": "#",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/muhammad-iqbal-9b4086225"
+      },
+      "image": "img/iqbal.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/male-icon.svg",
+      "gender": "male"
+    },
+    {
+      "name": "Muh. Halik",
+      "university": "Universitas Negeri Makassar",
+      "social_media": {
+        "instagram": "https://www.instagram.com/mhmmdhlk_",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/muh-halik"
+      },
+      "image": "img/halik.png",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/male-icon.svg",
+      "gender": "male"
+    },
+    {
+      "name": "Al Mahfira",
+      "university": "Universitas Tadulako",
+      "social_media": {
+        "instagram": "https://www.instagram.com/@alfira540",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/almahfira"
+      },
+      "image": "img/mahfira.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Khana Zulfana Imam",
+      "university": "Universitas Madura",
+      "social_media": {
+        "instagram": "https://www.instagram.com/khanazulfanaa",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/khana-zulfana-b3379230b/"
+      },
+      "image": "img/khana.png",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Asma Auliarani",
+      "university": "Universitas Hasanuddin",
+      "social_media": {
+        "instagram": "#",
+        "facebook": "#",
+        "linkedin": "#"
+      },
+      "image": "img/asma.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Nur Laila Zahiroh",
+      "university": "Universitas Bina Sarana Informatika",
+      "social_media": {
+        "instagram": "https://www.instagram.com/nlailaza/",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/nur-laila-zahiroh/"
+      },
+      "image": "img/laila.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Ana Aeni Najib",
+      "university": "Universitas Gadjah Mada",
+      "social_media": {
+        "instagram": "https://www.instagram.com/@nanarzd/",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/ana-aeni-najib-30b1291b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      "image": "img/ana.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Cindi Aulia",
+      "university": "Universitas Indraprasta PGRI",
+      "social_media": {
+        "instagram": "Instagram.com/cin_auliaaa",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/cindi-aulia-01a182249"
+      },
+      "image": "img/cindy.jpg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    },
+    {
+      "name": "Winona Avis",
+      "university": "Universitas Sebelas Maret",
+      "social_media": {
+        "instagram": "Instagram.com/cin_auliaaa",
+        "facebook": "#",
+        "linkedin": "https://www.linkedin.com/in/winona-avis-757a3b206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      "image": "img/winona.jpeg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/female-icon.svg",
+      "gender": "female"
+    }
+  ]
+}

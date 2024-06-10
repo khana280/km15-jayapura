@@ -4,74 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperStore - Dashboard</title>
+    <title>Dashboard - SuperStore</title>
     <link rel="icon" href="img/revou.png" type="image/png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/chartdashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <style>
-        .chart-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-
         .chartMenu {
-            margin-top: 80px;
-            text-align: center;
+            margin-top: 0; 
+            padding-top: 0; 
         }
-        
-        .chartMenu select {
-            padding: 5px;
-            font-size: 16px;
-            border-radius: 10px;
-        }
-
-        .chartBox {
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-        }
-
-        .chart-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
         .selector {
-            padding: 5px;
-        }
-
-        .form-select {
-            margin: 0 10px;
-            padding: 10px !important;
-            font-size: 14px !important;
-            border: 1px solid #BFC9D9 !important;
-        }
-
-        .form-select option {
-            padding: 10px;
-        }
-
-        .form-select:focus {
-            outline: none;
-            border: 1px solid #2D9CDB !important;
-        }
-
-        .form-select:focus {
-            outline: none;
-            border: 1px solid #2D9CDB;
-        }
-
+            margin: 0; 
+        } 
     </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="#" class="logo">Super<span>Store</span></a>
+            <img src="img/revou.png" alt="RevoU Logo" class="logo-image">
+            <a href="index.html" class="logo">Super<span>Store</span></a>
             <div class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></div>
         </div>
         <nav>
@@ -85,61 +40,222 @@
         </nav>
     </header>
 
-    <div class="chartMenu">
-        <label class="selector" for="chartSelector">Select Chart :</label>
-        <select id="chartSelector" class="form-select" onchange="showSelectedChart()">
-            <option value="all">All Charts</option>
-            <option value="category">Sales by Category</option>
-            <option value="state">Sales by State</option>
-            <option value="avgDiscount">Average Discount by State</option>
-            <option value="quarterlySalesAndProfit">Quarterly Sales and Profit</option>
-            <option value="absSubCategory">Abs by Sub-Category</option>
-            <option value="customerByState">Customer Count by State</option>
-        </select>
+    <main>
+        <h1>SuperStore Dashboard</h1>
+        <section class="chartMenu">
+            <label class="selector" for="chartSelector">Select Chart:</label>
+            <select id="chartSelector" onchange="showSelectedChart()">
+                <option value="all" class="optionchart">All Charts</option>
+                <option value="categoryChart">Sales by Category</option>
+                <option value="stateChart">Sales by State</option>
+                <option value="avgDiscountChart">Average Discount by State</option>
+                <option value="quarterlySalesAndProfitChart">Quarterly Sales and Profit</option>
+                <option value="absSubCategoryChart">Abs by Sub-Category</option>
+                <option value="customerByStateChart">Customer Count by State</option>
+            </select>
+        </section>
+        
+        <article class="chart-container">
+            <article class="chart-section">
+                <div class="chartBox" id="categoryChartBox">
+                    <select class="sorting" id="categorySort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Sales Category</option>
+                        <option value="desc">Highest Sales Category</option>
+                    </select>
+                    <h2>Sales by Category</h2>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                
+                <div class="chartBox" id="stateChartBox">
+                    <select class="sorting" id="salesstateSort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Sales State</option>
+                        <option value="desc">Highest Sales State</option>
+                    </select>
+                    <h2>Sales by State</h2>
+                    <canvas id="stateChart"></canvas>
+                </div>
+                <div class="chartBox" id="avgDiscountChartBox">
+                    <select class="sorting" id="avgDiscountSort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Average Discount</option>
+                        <option value="desc">Highest Average Discount</option>
+                    </select>
+                    <h2>Average Discount by State</h2>
+                    <canvas id="avgDiscountChart"></canvas>
+                </div>
+                <div class="chartBox" id="quarterlySalesAndProfitChartBox">
+                    <select class="sorting" id="quarterlySort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Sales and Profit</option>
+                        <option value="desc">Highest Sales and Profit</option>
+                    </select>
+                    <h2>Quarterly Sales and Profit</h2>
+                    <canvas id="quarterlySalesAndProfitChart"></canvas>
+                </div>
+                <div class="chartBox" id="absSubCategoryChartBox">
+                    <select class="sorting" id="absSort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Abs Sub-Category</option>
+                        <option value="desc">Highest Abs Sub-Category</option>
+                    </select>
+                    <h2>Abs by Sub-Category</h2>
+                    <canvas id="absSubCategoryChart"></canvas>
+                </div>
+                <div class="chartBox" id="customerByStateChartBox">
+                    <select class="sorting" id="customerSort">
+                        <option value="none">Sort</option>
+                        <option value="asc">Lowest Count Customer</option>
+                        <option value="desc">Highest Count Customer</option>
+                    </select>
+                    <h2>Customer Count by State</h2>
+                    <canvas id="customerByStateChart"></canvas>
+                </div>
+            </article>
 
-        <label class="selector" for="yearSelector">Select Year :</label>
-        <select id="yearSelector" class="form-select" onchange="filterByYear()">
-            <option value="all">All Years</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-        </select>
-    </div>
+            <section class="table-section" id="salesProfitTransactionTableSection">
+                <h2>Sales, Profit, and Transactions by State</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Sales</th>
+                                <th>Profit</th>
+                                <th>Transaction</th>
+                            </tr>
+                        </thead>
+                        <tbody id="salesProfitTransactionTableBody">
+                        </tbody>
+                    </table>
+                    <div class="showingdata" id="showingStateInfo"></div>
+                    <div id="pagination-container">
+                        <button id="prev-page">Previous</button>
+                        <span class="current" id="current-page">1</span>
+                        <button id="next-page">Next</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="table-section" id="subCategoryTableSection">
+                <h2>Sales, Profit, and Transactions by Sub-Category</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sub-Category</th>
+                                <th>Sales</th>
+                                <th>Profit</th>
+                                <th>Transaction</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subCategoryTableBody">
+                        </tbody>
+                    </table>
+                    <div class="showingdata" id="showingCategoryInfo"></div> 
+                    <div id="subCategory-pagination-container">
+                        <button id="prev-subCategoryPage">Previous</button>
+                        <span class="current" id="subCategory-current-page">1</span>
+                        <button id="next-subCategoryPage">Next</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="table-section" id="stateAOVTableSection">
+                <h2>AOV by State</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>AOV</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stateAOVTableBody">
+                        </tbody>
+                    </table>
+                    <div class="showingdata" id="showingDataInfo"></div>
+                    <div id="aov-pagination-container">
+                        <button id="prev-aovPage">Previous</button>
+                        <span class="current" id="AOV-page">1</span>
+                        <button id="next-aovPage">Next</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
     
-    <div class="chart-container">
-        <div class="chart-section">
-            <div class="chartBox" id="categoryChartBox">
-                <canvas id="categoryChart"></canvas>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/revou.png" alt="Logo">
             </div>
-            <div class="chartBox" id="stateChartBox">
-                <canvas id="stateChart"></canvas>
+            <div class="footer-column">
+                <h3>PT Revolusi Cita Edukasi</h3>
+                <p>Go Work Menara Rajawali, Ground Floor, Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2, Kuningan, Jakarta, South Jakarta City, Special Capital Region of Jakarta 12950</p>
             </div>
-            <div class="chartBox" id="avgDiscountChartBox">
-                <canvas id="avgDiscountChart"></canvas>
+            <div id="footer-nav" class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="chartBox" id="quarterlySalesAndProfitChartBox">
-                <canvas id="quarterlySalesAndProfitChart"></canvas>
-            </div>
-            <div class="chartBox" id="absSubCategoryChartBox">
-                <canvas id="absSubCategoryChart"></canvas>
-            </div>
-            <div class="chartBox" id="customerByStateChartBox">
-                <canvas id="customerByStateChart"></canvas>
+            <div id="footer-links" class="footer-column">
+                <h4>External Links</h4>
+                <ul>
+                    <li><a href="https://revou.co/">RevoU</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-
-
-    <footer id="footer">
-        <p>&copy; 2024 SuperStore. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://x.com/revoudotco"><i class="bx bxl-twitter"></i></a>
+            <a href="instagram.com/revou_id"><i class="bx bxl-instagram"></i></a>
+            <a href="www.youtube.com/@revoudotco"><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.facebook.com/revoU.co/"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/school/revou/mycompany/"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <p class="footer-bottom">&copy; 2024 SuperStore. All right reserved</p>
     </footer>
-
-    <div class="scroll-to-bottom" onclick="scrollToBottom()"><i class="bx bx-chevron-down"></i></div>
-
-    <script src="dashboard.js"></script>
-    <script src="index.js"></script>
-    <script src="filter.js"></script>
-
+    <script src="script.js"></script>
+    <script src="js/dashboard.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        function showSelectedChart() {
+            const selectedChart = document.getElementById('chartSelector').value;
+            const chartBoxes = document.querySelectorAll('.chartBox');
+            const tableSections = document.querySelectorAll('.table-section');
+
+            chartBoxes.forEach(box => {
+                box.style.display = 'none';
+            });
+
+            if (selectedChart === 'all') {
+                chartBoxes.forEach(box => {
+                    box.style.display = 'block';
+                });
+                tableSections.forEach(section => {
+                    section.style.display = 'block';
+                });
+            } else {
+                const chartBox = document.getElementById(`${selectedChart}Box`);
+                if (chartBox) {
+                    chartBox.style.display = 'block';
+                }
+                tableSections.forEach(section => {
+                    section.style.display = 'none';
+                });
+            }
+        }
+
+        document.getElementById('chartSelector').addEventListener('change', showSelectedChart);
+
+        showSelectedChart();
+    </script>
 </body>
 </html>

@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperStore - Contact Us</title>
+    <title>Contact Us - SuperStore</title>
     <link rel="icon" href="img/revou.png" type="image/png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/modalcontact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <style>
-
-        
-    </style>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <a href="#" class="logo">Super<span>Store</span></a>
-            <div class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></div>
+            <img src="img/revou.png" alt="RevoU Logo" class="logo-image">
+            <a href="index.html" class="logo">Super<span>Store</span></a>
+            <aside class="menu-icon" id="menu-icon"><i class="bx bx-menu"></i></aside>
         </div>
         <nav>
             <ul class="navbar">
@@ -36,7 +36,7 @@
             <div class="contact-header">
                 <h2>Contact Us</h2>
             </div>
-            <div class="contact-card">
+            <article class="contact-card">
                 <div class="contact-form">
                     <form id="contact-form">
                         <label for="name">Name:</label>
@@ -45,6 +45,7 @@
                         <input type="email" id="email" name="email" required>
                         <label for="gender">Gender:</label>
                         <select id="gender" name="gender" required>
+                            <option value="select">Select Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
@@ -52,38 +53,73 @@
                         <input type="address" id="address" name="address" required>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
-                        <button type="submit">Send</button>
-                    </form>
+                        <article class="button-container">
+                            <button type="submit">Send</button>
+                        </article>
+                    </form>                    
                 </div>
-            </div>
+            </article>
+        </section>
+        <section id="myModal" class="modal">
+            <article class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Confirm Data</h2>
+                <p><strong>Name:</strong> <span id="modal-name"></span></p>
+                <p><strong>Email:</strong> <span id="modal-email"></span></p>
+                <p><strong>Gender:</strong> <span id="modal-gender"></span></p>
+                <p><strong>Address:</strong> <span id="modal-address"></span></p>
+                <p><strong>Message:</strong> <span id="modal-message"></span></p>
+                <div class="button-container">
+                    <button id="confirm-btn">Confirm</button>
+                    <button id="cancel-btn">Cancel</button>
+                </div>
+            </article>
+        </section>
+        <section id="successModal" class="modal">
+            <article class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Message Sent Successfully</h2>
+                <p>Your message has been sent. Thank you, <span id="sender-name"></span>!</p>
+                <button id="ok-btn">OK</button>
+            </article>
         </section>
     </main>
     <footer id="footer">
-        <p>&copy; 2024 SuperStore. All Rights Reserved.</p>
+        <section class="footer-container">
+            <article class="footer-logo">
+                <img src="img/revou.png" alt="Logo">
+            </article>
+            <article class="footer-column">
+                <h3>PT Revolusi Cita Edukasi</h3>
+                <p>Go Work Menara Rajawali, Ground Floor, Jl. DR. Ide Anak Agung Gde Agung, RT.5/RW.2, Kuningan, Jakarta, South Jakarta City, Special Capital Region of Jakarta 12950</p>
+            </article>
+            <article id="footer-nav" class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </article>
+            <article id="footer-links" class="footer-column">
+                <h4>External Links</h4>
+                <ul>
+                    <li><a href="https://revou.co/">RevoU</a></li>
+                </ul>
+            </article>
+        </section>
+        <article class="social-icons">
+            <a href="https://x.com/revoudotco"><i class="bx bxl-twitter"></i></a>
+            <a href="instagram.com/revou_id"><i class="bx bxl-instagram"></i></a>
+            <a href="www.youtube.com/@revoudotco"><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.facebook.com/revoU.co/"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/school/revou/mycompany/"><i class="bx bxl-linkedin"></i></a>
+        </article>
+        <p class="footer-bottom">&copy; 2024 SuperStore. All right reserved</p>
     </footer>
-
-    <a href="#header" class="scroll-to-top"><i class="bx bx-chevron-up"></i></a>
-
-    <script src="index.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuIcon = document.getElementById('menu-icon');
-            const nav = document.querySelector('nav');
-
-            menuIcon.addEventListener('click', function() {
-                nav.classList.toggle('active');
-            });
-
-            // Fungsi untuk menampilkan tombol scroll-to-top
-            window.onscroll = function() {scrollFunction()};
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.querySelector('.scroll-to-top').style.display = 'block';
-                } else {
-                    document.querySelector('.scroll-to-top').style.display = 'none';
-                }
-            }
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>

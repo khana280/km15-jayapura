@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Office Supplies",
+    "sales": 115483.72999999984,
+    "__r_idx__": 0
+  },
+  {
+    "category": "Technology",
+    "sales": 54529.12499999997,
+    "__r_idx__": 1
+  },
+  {
+    "category": "Furniture",
+    "sales": 48861.7945999999,
+    "__r_idx__": 2
+  }
+]

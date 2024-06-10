@@ -1,0 +1,87 @@
+
+        #chartSelector {
+            color: #FFBF00;
+            width: 60%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .chartBox h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            position:relative;
+            top: 10px;
+        }
+
+        .chartBox canvas {
+            display: flex;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        #subCategoryTableBody {
+            font-size: 14px !important;
+        }
+
+        #salesProfitTransactionTableBody {
+            font-size: 14px !important;
+        }
+
+        #stateAOVTableBody {
+            font-size: 14px !important;
+        }
+
+        .table-section {
+            border: 1px solid #FFBF00;
+            border-radius: 10px;
+            margin: 30px ;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 90%;
+            overflow-x: auto;
+        }
+
+        .sorting {
+            border: 1px solid #FFBF00;
+            color: #FFBF00;
+            border-radius: 5px;
+        }
+        
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table-container th,
+        .table-container td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .table-container th,
+            .table-container td {
+                padding: 6px;
+                font-size: 12px; 
+            }
+
+            #chartSelector {
+                color: #FFBF00;
+                width: 80%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+            }
+        }
+        
+
+        .showingdata {
+            text-align: right; 
+            margin-top: 10px; 
+        }
