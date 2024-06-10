@@ -142,6 +142,19 @@
       "logo_kampus": "img/revou.png",
       "logo_position": "img/female-icon.svg",
       "gender": "female"
+    },
+    {
+      "name": "Muhammad Zaki Arham",
+      "university": "Institut Bisnis dan Informatika Kesatuan",
+      "social_media": {
+        "instagram": "Instagram.com/zakiarham",
+        "facebook": "#",
+        "linkedin": "#"
+      },
+      "image": "img/zaki.jpeg",
+      "logo_kampus": "img/revou.png",
+      "logo_position": "img/male-icon.svg",
+      "gender": "male"
     }
   ]
 }
